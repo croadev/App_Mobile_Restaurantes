@@ -26,9 +26,9 @@ export function UserGuestScreen() {
       </Text>
 
       <Button
-        tittle="Ver Tu Perfil"
+        title="Ver Tu Perfil"
         onPress={goToLogin}
-        style={styles.btnStyles}
+        buttonStyle={styles.btnStyles}
       />
     </ScrollView>
   );

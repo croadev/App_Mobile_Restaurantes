@@ -4,6 +4,7 @@ import { useNavigation } from "@react-navigation/native";
 import { Text, Image } from "react-native-elements";
 import { styles } from "./LoginScreen.styles";
 import { screen } from "../../../utils/ScreenName";
+import { LoginForm } from "../../../components2/auth";
 
 export function LoginScreen() {
   const navigation = useNavigation();
@@ -19,7 +20,7 @@ export function LoginScreen() {
         style={styles.image}
       />
       <View style={styles.content}>
-        <Text>Estamos en el Login</Text>
+        <LoginForm />
         <Text onPress={goToRegister}>Registrarse</Text>
       </View>
     </ScrollView>
